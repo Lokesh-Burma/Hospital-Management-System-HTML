@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title="Prominance Hospitals"></title>
+<link rel="stylesheet" href="externalsheet.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.container1{
+    width:60%;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.text{
+  color:black;
+  font-size:18px;
+  font-style:timesnewroman;
+   text-align:left;
+}
+
+table,th,td {
+    border-collapse:collapse;
+    border: 3px solid black;
+    width: 70%;
+}
+
+th,td{
+    text-align: left;
+    padding: 16px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
+</head>
+
+<body onload="C()">
+ <div class="grid-container">
+  <div class="grid-item"><img src="image10.jpg" border="4px" hsapce="50" height="200" width="200"/></div>
+  <div class="grid-item"><h1> PROMINENCE HOSPITALS </h1><h3> estd:1950 </h3></h3><h3>Street 10,Jalandhar,Punjab.</h3></div>
+  <div class="grid-item"><img src="image10.jpg" border="4px" hsapce="50" height="200" width="200"/></div>   
+ </div>
+
+<ul>
+  <li><a href="1,MAINPAGE.html">HOME</a></li>
+  <li><a href="2,CONTACTS.html">CONTACT/HELPLINE</a></li>
+  <li><a href="3,PATIENT LOGIN.html">PATIENT HEALTH INFO</a></li>
+  <li><a href="4,DOCTOR LOGIN.html">MEDICAL STAFF LOGIN</a></li>
+  <li><a href="5,DEPARTMENTS.html">DEPARTMENTS AND CENTERS</a></li>
+  <li><a href="6,SERVICES.html">SERVICES</a></li>
+  <li><a href="7,FEEDBACK.html">FEEDBACK</a></li>
+</ul>
+
+<div align="center">
+<div class="container1">
+  <form onsubmit="alert('Are you sure you want to logout')">
+    <h2 align="center"> <b>DOCTOR  PROFILE</b> </h2>
+    <img src="login1.jpg" width="200px" height="200px">
+    <table align="center" bgcolor="white">
+  <tr>
+   <td>NAME OF THE DOCTOR</td>
+   <td><input type="text" value="MR.RITHEJ GABHA"></td>
+  </tr>
+  <tr>
+    <td>SPECIALISATION</td>
+    <td><input type="text" value="CARDIOLOGIST"></td>
+  </tr>
+  <tr>
+    <td>CABIN NUMBER</td>
+    <td><input type="text" value="B-31"></td>
+  </tr>
+  <tr>
+    <td>DESIGNATION</td>
+    <td><input type="text" value="CHIEF SURGEON"></td>
+  </tr>
+  <tr>
+    <td>MOBILE NUUMBER</td>
+    <td><input type="text" value="123456789"></td>
+  </tr>
+  <tr>
+    <td>OPERATIONS PERFORMED</td>
+    <td><input type="text" value="100"></td>
+  </tr>
+  <tr>
+    <td>VISITING HOURS</td>
+    <td><input type="text" value="9 AM TO 10 AM"></td>
+  </tr>
+  <tr>
+    <td>EXPERIENCE</td>
+    <td><input type="text" value="15 YEARS"></td>
+  </tr>
+  <tr>
+    <td>TODAYS APPOINTMENTS</td>
+    <td>
+     <select id="appointments" value="appointmnets">
+      <option value="meeting">Meeting at 10am </option>
+      <option value="checkup">Patient checkup at 12pm </option>
+      <option value="surgery">Surgery at 3 pm </option>
+     </select>
+    </td>
+  </tr>
+</table>
+    <button type="submit" onclick="B()"><a href="4,DOCTOR LOGIN.html">Logout</a></button>
+ </form>
+
+<script>
+ function B()
+ {
+   var r=confirm("Are you sure you want to logout?");
+   if(r==true)
+   { return true; }
+   else
+   { return false; }
+ }
+ function C()
+ {
+ alert("Your Page is loading");
+ }
+</script>
+
+</div>
+</div>
+</body>
+</html>

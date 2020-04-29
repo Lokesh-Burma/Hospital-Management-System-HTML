@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title="Prominance Hospitals"></title>
+<link rel="stylesheet" href="externalsheet.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.container1{
+    width:60%;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.text{
+  color:black;
+  font-size:18px;
+  font-style:timesnewroman;
+   text-align:left;
+}
+
+table,th,td {
+    border-collapse:collapse;
+    border: 3px solid black;
+    width: 70%;
+}
+
+th,td{
+    text-align: left;
+    padding: 16px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
+</head>
+
+<body>
+ <div class="grid-container">
+  <div class="grid-item"><img src="image10.jpg" border="4px" hsapce="50" height="200" width="200"/></div>
+  <div class="grid-item"><h1> PROMINENCE HOSPITALS </h1><h3> estd:1950 </h3></h3><h3>Street 10,Jalandhar,Punjab.</h3></div>
+  <div class="grid-item"><img src="image10.jpg" border="4px" hsapce="50" height="200" width="200"/></div>   
+ </div>
+<ul>
+  <li><a href="1,MAINPAGE.html">HOME</a></li>
+  <li><a href="2,CONTACTS.html">CONTACT/HELPLINE</a></li>
+  <li><a href="3,PATIENT LOGIN.html">PATIENT HEALTH INFO</a></li>
+  <li><a href="4,DOCTOR LOGIN.html">MEDICAL STAFF LOGIN</a></li>
+  <li><a href="5,DEPARTMENTS.html">DEPARTMENTS AND CENTERS</a></li>
+  <li><a href="6,SERVICES.html">SERVICES</a></li>
+  <li><a href="7,FEEDBACK.html">FEEDBACK</a></li>
+</ul>
+
+<div align="center">
+<div class="container1">
+  <form onsubmit="alert('Are you sure you want to logout')">
+    <P align="center"> <b>PATIENT PROFILE</b> </P>
+    <img src="login1.jpg" width="200px" height="200px">
+    <table align="center" bgcolor="white">
+  <tr>
+   <td>NAME OF THE PATIENT</td>
+   <td><input type="text" value="LOKESH BURMA"></td>
+  </tr>
+  <tr>
+    <td>AGE</td>
+    <td><input type="text" value="18"></td>
+  </tr>
+  <tr>
+    <td>HEALTH PROBLEM</td>
+    <td><input type="text" value="STOMACH PAIN"></td>
+  </tr>
+  <tr>
+    <td>DOCTOR APPOINTED</td>
+    <td><input type="text" value="Mr.Madhusadan"></td>
+  </tr>
+  <tr>
+    <td>TESTS PERFORMED</td>
+    <td><input type="text" value="BLOOD TEST"></td>
+  </tr>
+  <tr>
+    <td>HEALTH CONDITION</td>
+    <td><input type="text" value="NORMAL"></td>
+  </tr>
+  <tr>
+    <td>VISITING HOURS</td>
+    <td><input type="text" value="9 AM TO 10 AM"></td>
+  </tr>
+  <tr>
+    <td>MEDICINES PRESCRIBED</td>
+    <td><input type="text" value="OFLOXIN,ESTROGEN"></td>
+  </tr>
+  <tr>
+    <td>BED NUMBER</td>
+    <td><input type="text" value="10,ROOM 2"></td>
+  </tr>
+</table>
+    <button type="submit" onclick="B()"><a href="3,PATIENT LOGIN.html">Logout</a></button>
+ </form>
+
+<script>
+ function B()
+ {
+   var r=confirm("Are you sure you want to logout?");
+   if(r==true)
+   { return true; }
+   else
+   { return false; }
+ }
+ function C()
+ {
+ alert("Your Page is loading");
+ }
+</script>
+
+</div>
+</div>
+</body>
+</html>
